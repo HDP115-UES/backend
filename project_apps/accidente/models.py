@@ -20,4 +20,4 @@ class Accidentes(models.Model):
 
     # Retorna el nombre en forma de cadena
     def __str__(self):
-        return self.descripción
+        return self.descripción 

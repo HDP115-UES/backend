@@ -1,5 +1,6 @@
 from rest_framework import status
 from rest_framework.response import Response
+from project_apps.accidente.models import Accidentes
 from project_apps.reporte.models import Reportes
 from project_apps.reporte.serializers import ReporteSerializer
 
