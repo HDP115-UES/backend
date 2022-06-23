@@ -15,6 +15,8 @@ class ReporteSerializer(ModelSerializer):
             'hora_accidente': instance.hora_accidente,
             'numero_involucrados': instance.numero_involucrados,
             'imagen': instance.imagen if instance.imagen != '' else '',
-            'accidente': instance.accidente.descripción,
+            'tipo_vehiculo': instance.tipo_vehiculo.nombre,
+            'tipo_accidente': instance.tipo_accidente.nombre,
             'departamento': instance.departamento.nombre,
+            'descripción': instance.descripción,
         }
