@@ -8,6 +8,7 @@ class ReporteSerializer(ModelSerializer):
         model = Reportes
         fields = '__all__'
 
+    # Para presentar los datos 
     def to_representation(self, instance):
         return {
             'id_reporte': instance.id_reporte,

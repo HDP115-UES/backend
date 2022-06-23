@@ -15,6 +15,7 @@ class Reportes(models.Model):
     tipo_accidente = models.ForeignKey(TipoAccidente, on_delete= models.CASCADE, null= False, blank= False)
     departamento = models.ForeignKey(Departamentos, on_delete= models.CASCADE, null= False, blank= False)
     descripción = models.CharField(max_length= 500,  blank=True, null=True)
+    
     # Clase meta para generalizar las tablas
     class Meta:
         verbose_name = 'Reporte'

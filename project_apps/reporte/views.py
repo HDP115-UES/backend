@@ -46,6 +46,7 @@ def getRoutes(request):
 @api_view(['GET', 'POST'])
 def getReportes(request):
     if request.method == 'GET':
+        
         return getReportesList(request)
     elif request.method == 'POST':
         return createReporte(request)

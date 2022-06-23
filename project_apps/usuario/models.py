@@ -1,8 +1,8 @@
-from operator import mod
 from pyexpat import model
 from django.db import models
 
-from project_apps.departamento. models import Departamentos
+from project_apps.departamento.models import Departamentos
+from project_apps.rol.models import Rol
 
 #Clase Usuarios
 class Usuarios(models.Model):
@@ -13,6 +13,7 @@ class Usuarios(models.Model):
     correo = models.EmailField(max_length= 200, unique=True, blank=True, null=True)
     contraseña = models.CharField(max_length= 100)
     departamento = models.ForeignKey(Departamentos, on_delete= models.CASCADE, null= False, blank= False)
+    rol = models.ForeignKey(Rol, on_delete= models.CASCADE, null= False, blank= False)
 
     # Clase meta para generalizar las tablas
     class Meta:
