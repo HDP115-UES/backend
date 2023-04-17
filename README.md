@@ -1,4 +1,4 @@
-## Setup
+# Setup
 Para activar el virtualenvironment, run:   
  ```env/Scripts/Activate```   
  
